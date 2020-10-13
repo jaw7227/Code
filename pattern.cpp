@@ -7,7 +7,7 @@ void solve()
   int n=7; // size of triangle
   //cin >> n;
   for (int i=1;i<=n;i++){
-    for(int j=n;j>n-i;j--){
+    for(int j=n-1;j>n-i;j--){
       cout<<" ";
     }
     for(int j=i;j<=n;j++){
@@ -16,7 +16,7 @@ void solve()
     cout << endl;
   }
   for (int i=2;i<=n;i++){
-    for(int j=i;j<=n;j++){
+    for(int j=i;j<n;j++){
       cout<<" ";
     }
     for(int j=n-i+1;j<=n;j++){
@@ -30,12 +30,12 @@ int32_t main()
 {
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
-//
-// #ifndef ONLINE_JUDGE
-//     freopen("inputf.in", "r", stdin);
-//     freopen("error.out", "w", stderr);
-//     freopen("outputf.out", "w", stdout);
-// #endif
+
+#ifndef ONLINE_JUDGE
+    freopen("inputf.in", "r", stdin);
+    freopen("error.out", "w", stderr);
+    freopen("outputf.out", "w", stdout);
+#endif
 
     int T = 1;
     //cin >> T;
